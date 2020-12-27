@@ -1,0 +1,55 @@
+question :
+    find end of maze, and print coordinate of array
+
+input :
+    1 - array size 'n', 'm'
+    2 - 'n' by 'm' array (0 == way, 1 == wall, 2 == end of maze)
+    3 - coordinate of start
+
+output :
+    coordinate of end
+
+example1 :
+    input :
+        8 8
+        0 1 0 0 0 0 0 1
+        0 1 0 1 1 1 0 1
+        0 0 0 0 0 0 0 1
+        1 0 1 1 1 0 0 0
+        1 0 0 0 0 0 1 1
+        0 0 1 0 1 0 1 0
+        0 0 1 0 1 0 0 0
+        0 0 1 0 1 1 1 2
+        0 0
+    output :
+        7 7
+
+example2 :
+    input :
+        8 8
+        0 1 0 0 0 0 0 1
+        0 1 0 1 1 1 0 1
+        0 0 0 0 0 0 0 1
+        1 0 1 1 1 0 0 0
+        1 0 0 0 0 0 1 1
+        0 0 1 0 1 0 1 0
+        0 0 1 0 1 0 0 0
+        0 0 1 0 1 1 1 1
+        0 0
+    output :
+        None None
+
+example3 :
+    input :
+        8 9
+        0 1 0 0 0 0 0 1 1
+        0 1 0 1 1 1 0 1 1
+        0 0 0 0 0 0 0 1 1
+        1 0 1 1 1 0 0 0 0
+        1 0 0 0 0 0 1 1 0
+        0 0 1 0 1 0 1 0 1
+        0 0 1 0 1 0 0 0 1
+        0 0 1 0 1 1 1 0 2
+        0 0
+    output :
+        7 8
