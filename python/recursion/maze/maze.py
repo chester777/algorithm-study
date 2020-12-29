@@ -40,6 +40,8 @@ def find_maze(start_row, start_col, row_len, col_len, maze):
                 return current_row-1, current_col
             elif maze[current_row-1][current_col] == 0 and maze[current_row-1][current_col] != 3:
                 result_row, result_col = _find_maze(current_row-1, current_col, current_maze)
+                if result_row is not None and result_col is not None:
+                    return result_row, result_col
 
         # check west way
         if current_col-1 >= 0:
